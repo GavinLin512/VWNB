@@ -240,12 +240,12 @@ const animationTimeline = () => {
     )
     .staggerTo(
       ".eight svg",
-      1.5,
+      3.5,
       {
         visibility: "visible",
         opacity: 0,
         scale: 80,
-        repeat: 3,
+        repeat: 4,
         repeatDelay: 1.4,
       },
       0.3
@@ -286,6 +286,8 @@ const fetchData = () => {
             document
               .getElementById(customData)
               .setAttribute("src", data[customData]);
+          } else if (customData === "wishText") {
+            document.getElementById(customData).innerHTML = `${data[customData]}`;
           } else {
             document.getElementById(customData).innerText = data[customData];
           }

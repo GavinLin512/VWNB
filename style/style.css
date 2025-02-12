@@ -221,6 +221,9 @@ body {
   font-weight: lighter;
   font-size: 2rem;
   margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .nine p {
