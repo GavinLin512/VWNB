@@ -9,12 +9,13 @@ body {
 
 .container {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .container div.six {
@@ -160,55 +161,55 @@ body {
 .eight svg:nth-child(1) {
   top: 7vh;
   left: 5vw;
-  fill: #bd6ecf;
+  fill: #FF69B4;
 }
 
 .eight svg:nth-child(2) {
   top: 23vh;
   left: 35vw;
-  fill: #7dd175;
+  fill: #FF1493;
 }
 
 .eight svg:nth-child(3) {
   top: 33vh;
   left: 23vw;
-  fill: #349d8b;
+  fill: #FF007F;
 }
 
 .eight svg:nth-child(4) {
   top: 43vh;
   left: 57vw;
-  fill: #347a9d;
+  fill: #FFB6C1;
 }
 
 .eight svg:nth-child(5) {
   top: 68vh;
   left: 7vw;
-  fill: #c66053;
+  fill: #DB7093;
 }
 
 .eight svg:nth-child(6) {
   top: 42vh;
   left: 77vw;
-  fill: #bfaa40;
+  fill: #FF69B4;
 }
 
 .eight svg:nth-child(7) {
   top: 68vh;
   left: 83vw;
-  fill: #e3bae8;
+  fill: #FFB6C1;
 }
 
 .eight svg:nth-child(8) {
   top: 86vh;
   left: 37vw;
-  fill: #8762cb;
+  fill: #FF1493;
 }
 
 .eight svg:nth-child(9) {
   top: 94vh;
   left: 87vw;
-  fill: #9a90da;
+  fill: #DB7093;
 }
 
 .wish-hbd {
@@ -222,6 +223,7 @@ body {
   font-size: 2rem;
   margin: 10px 0 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* align-items: center; */
 }
@@ -263,7 +265,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
 
   .four .text-box {
